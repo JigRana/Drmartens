@@ -1,0 +1,307 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-28T19:41:13.612Z",
+        "before": [
+          {
+            "result": {
+              "duration": 17025000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.DrMartens.Hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Login with valid and Invalid credential",
+        "description": "",
+        "id": "login-function;login-with-valid-and-invalid-credential;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1674000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Home page",
+            "match": {
+              "location": "com.DrMartens.stepdefs.HomePageStepDef.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4883000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "click on sign In link",
+            "match": {
+              "location": "com.DrMartens.stepdefs.HomePageStepDef.click_on_sign_in_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 447000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter \"rana_jigar@yahoo.com\" and \"William123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"rana_jigar@yahoo.com\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"William123\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.DrMartens.stepdefs.LoginStepDef.user_enter_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7034000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on SignIn Button",
+            "match": {
+              "location": "com.DrMartens.stepdefs.LoginStepDef.user_click_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6433000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User check \"valid\" of Login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"valid\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.DrMartens.stepdefs.LoginStepDef.user_check_of_login(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-28T19:41:51.455Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11062000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.DrMartens.Hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Login with valid and Invalid credential",
+        "description": "",
+        "id": "login-function;login-with-valid-and-invalid-credential;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1136000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Home page",
+            "match": {
+              "location": "com.DrMartens.stepdefs.HomePageStepDef.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10045000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "click on sign In link",
+            "match": {
+              "location": "com.DrMartens.stepdefs.HomePageStepDef.click_on_sign_in_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 445000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter \"rana_jigar@yahoo.com\" and \"ghf324\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"rana_jigar@yahoo.com\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"ghf324\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.DrMartens.stepdefs.LoginStepDef.user_enter_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4761000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on SignIn Button",
+            "match": {
+              "location": "com.DrMartens.stepdefs.LoginStepDef.user_click_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4117000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User check \"invalid\" of Login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.DrMartens.stepdefs.LoginStepDef.user_check_of_login(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-28T19:42:23.054Z",
+        "before": [
+          {
+            "result": {
+              "duration": 18903000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.DrMartens.Hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Login with valid and Invalid credential",
+        "description": "",
+        "id": "login-function;login-with-valid-and-invalid-credential;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2286000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Home page",
+            "match": {
+              "location": "com.DrMartens.stepdefs.HomePageStepDef.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7400000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "click on sign In link",
+            "match": {
+              "location": "com.DrMartens.stepdefs.HomePageStepDef.click_on_sign_in_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 538000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter \"abcdefg@gmail\" and \"abcdefg123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abcdefg@gmail\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"abcdefg123\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.DrMartens.stepdefs.LoginStepDef.user_enter_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4534000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on SignIn Button",
+            "match": {
+              "location": "com.DrMartens.stepdefs.LoginStepDef.user_click_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4312000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User check \"invalid\" of Login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.DrMartens.stepdefs.LoginStepDef.user_check_of_login(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Function",
+    "description": "",
+    "id": "login-function",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/login.feature",
+    "tags": []
+  }
+]

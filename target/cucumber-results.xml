@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="108.169">
+<testcase classname="Login Function" name="Login with valid and Invalid credential" time="37.82">
+<system-out><![CDATA[Given User is on Home page..................................................passed
+And click on sign In link...................................................passed
+When User enter "rana_jigar@yahoo.com" and "William123".....................passed
+And User click on SignIn Button.............................................passed
+Then User check "valid" of Login............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Function" name="Login with valid and Invalid credential 2" time="31.59">
+<system-out><![CDATA[Given User is on Home page..................................................passed
+And click on sign In link...................................................passed
+When User enter "rana_jigar@yahoo.com" and "ghf324".........................passed
+And User click on SignIn Button.............................................passed
+Then User check "invalid" of Login..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Function" name="Login with valid and Invalid credential 3" time="37.985">
+<system-out><![CDATA[Given User is on Home page..................................................passed
+And click on sign In link...................................................passed
+When User enter "abcdefg@gmail" and "abcdefg123"............................passed
+And User click on SignIn Button.............................................passed
+Then User check "invalid" of Login..........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

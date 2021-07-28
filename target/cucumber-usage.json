@@ -1,0 +1,159 @@
+[
+  {
+    "source": "User is on Home page",
+    "steps": [
+      {
+        "name": "User is on Home page",
+        "aggregatedDurations": {
+          "median": 1.674,
+          "average": 1.698666666
+        },
+        "durations": [
+          {
+            "duration": 1.674,
+            "location": "file:///C:/Users/Jig/IdeaProjects/DrMartens/src/test/resources/login.feature:4"
+          },
+          {
+            "duration": 1.136,
+            "location": "file:///C:/Users/Jig/IdeaProjects/DrMartens/src/test/resources/login.feature:4"
+          },
+          {
+            "duration": 2.286,
+            "location": "file:///C:/Users/Jig/IdeaProjects/DrMartens/src/test/resources/login.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on sign In link",
+    "steps": [
+      {
+        "name": "click on sign In link",
+        "aggregatedDurations": {
+          "median": 7.4,
+          "average": 7.442666666
+        },
+        "durations": [
+          {
+            "duration": 4.883,
+            "location": "file:///C:/Users/Jig/IdeaProjects/DrMartens/src/test/resources/login.feature:5"
+          },
+          {
+            "duration": 10.045,
+            "location": "file:///C:/Users/Jig/IdeaProjects/DrMartens/src/test/resources/login.feature:5"
+          },
+          {
+            "duration": 7.4,
+            "location": "file:///C:/Users/Jig/IdeaProjects/DrMartens/src/test/resources/login.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User enter {string} and {string}",
+    "steps": [
+      {
+        "name": "User enter \"rana_jigar@yahoo.com\" and \"William123\"",
+        "aggregatedDurations": {
+          "median": 0.447,
+          "average": 0.447
+        },
+        "durations": [
+          {
+            "duration": 0.447,
+            "location": "file:///C:/Users/Jig/IdeaProjects/DrMartens/src/test/resources/login.feature:6"
+          }
+        ]
+      },
+      {
+        "name": "User enter \"rana_jigar@yahoo.com\" and \"ghf324\"",
+        "aggregatedDurations": {
+          "median": 0.445,
+          "average": 0.445
+        },
+        "durations": [
+          {
+            "duration": 0.445,
+            "location": "file:///C:/Users/Jig/IdeaProjects/DrMartens/src/test/resources/login.feature:6"
+          }
+        ]
+      },
+      {
+        "name": "User enter \"abcdefg@gmail\" and \"abcdefg123\"",
+        "aggregatedDurations": {
+          "median": 0.538,
+          "average": 0.538
+        },
+        "durations": [
+          {
+            "duration": 0.538,
+            "location": "file:///C:/Users/Jig/IdeaProjects/DrMartens/src/test/resources/login.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User click on SignIn Button",
+    "steps": [
+      {
+        "name": "User click on SignIn Button",
+        "aggregatedDurations": {
+          "median": 4.761,
+          "average": 5.443
+        },
+        "durations": [
+          {
+            "duration": 7.034,
+            "location": "file:///C:/Users/Jig/IdeaProjects/DrMartens/src/test/resources/login.feature:7"
+          },
+          {
+            "duration": 4.761,
+            "location": "file:///C:/Users/Jig/IdeaProjects/DrMartens/src/test/resources/login.feature:7"
+          },
+          {
+            "duration": 4.534,
+            "location": "file:///C:/Users/Jig/IdeaProjects/DrMartens/src/test/resources/login.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User check {string} of Login",
+    "steps": [
+      {
+        "name": "User check \"valid\" of Login",
+        "aggregatedDurations": {
+          "median": 6.433,
+          "average": 6.433
+        },
+        "durations": [
+          {
+            "duration": 6.433,
+            "location": "file:///C:/Users/Jig/IdeaProjects/DrMartens/src/test/resources/login.feature:8"
+          }
+        ]
+      },
+      {
+        "name": "User check \"invalid\" of Login",
+        "aggregatedDurations": {
+          "median": 4.2145,
+          "average": 4.2145
+        },
+        "durations": [
+          {
+            "duration": 4.117,
+            "location": "file:///C:/Users/Jig/IdeaProjects/DrMartens/src/test/resources/login.feature:8"
+          },
+          {
+            "duration": 4.312,
+            "location": "file:///C:/Users/Jig/IdeaProjects/DrMartens/src/test/resources/login.feature:8"
+          }
+        ]
+      }
+    ]
+  }
+]

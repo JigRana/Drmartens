@@ -1,0 +1,21 @@
+
+Scenario Outline: Login with valid and Invalid credential [90m# src/test/resources/login.feature:12[0m
+  [32mGiven [0m[32mUser is on Home page[0m                              [90m# com.DrMartens.stepdefs.HomePageStepDef.user_is_on_home_page()[0m
+  [32mAnd [0m[32mclick on sign In link[0m                               [90m# com.DrMartens.stepdefs.HomePageStepDef.click_on_sign_in_link()[0m
+  [32mWhen [0m[32mUser enter [0m[32m[1m"rana_jigar@yahoo.com"[0m[32m and [0m[32m[1m"William123"[0m [90m# com.DrMartens.stepdefs.LoginStepDef.user_enter_and(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mUser click on SignIn Button[0m                         [90m# com.DrMartens.stepdefs.LoginStepDef.user_click_on_sign_in_button()[0m
+  [32mThen [0m[32mUser check [0m[32m[1m"valid"[0m[32m of Login[0m                        [90m# com.DrMartens.stepdefs.LoginStepDef.user_check_of_login(java.lang.String)[0m
+
+Scenario Outline: Login with valid and Invalid credential [90m# src/test/resources/login.feature:13[0m
+  [32mGiven [0m[32mUser is on Home page[0m                              [90m# com.DrMartens.stepdefs.HomePageStepDef.user_is_on_home_page()[0m
+  [32mAnd [0m[32mclick on sign In link[0m                               [90m# com.DrMartens.stepdefs.HomePageStepDef.click_on_sign_in_link()[0m
+  [32mWhen [0m[32mUser enter [0m[32m[1m"rana_jigar@yahoo.com"[0m[32m and [0m[32m[1m"ghf324"[0m     [90m# com.DrMartens.stepdefs.LoginStepDef.user_enter_and(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mUser click on SignIn Button[0m                         [90m# com.DrMartens.stepdefs.LoginStepDef.user_click_on_sign_in_button()[0m
+  [32mThen [0m[32mUser check [0m[32m[1m"invalid"[0m[32m of Login[0m                      [90m# com.DrMartens.stepdefs.LoginStepDef.user_check_of_login(java.lang.String)[0m
+
+Scenario Outline: Login with valid and Invalid credential [90m# src/test/resources/login.feature:14[0m
+  [32mGiven [0m[32mUser is on Home page[0m                              [90m# com.DrMartens.stepdefs.HomePageStepDef.user_is_on_home_page()[0m
+  [32mAnd [0m[32mclick on sign In link[0m                               [90m# com.DrMartens.stepdefs.HomePageStepDef.click_on_sign_in_link()[0m
+  [32mWhen [0m[32mUser enter [0m[32m[1m"abcdefg@gmail"[0m[32m and [0m[32m[1m"abcdefg123"[0m        [90m# com.DrMartens.stepdefs.LoginStepDef.user_enter_and(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mUser click on SignIn Button[0m                         [90m# com.DrMartens.stepdefs.LoginStepDef.user_click_on_sign_in_button()[0m
+  [32mThen [0m[32mUser check [0m[32m[1m"invalid"[0m[32m of Login[0m                      [90m# com.DrMartens.stepdefs.LoginStepDef.user_check_of_login(java.lang.String)[0m
