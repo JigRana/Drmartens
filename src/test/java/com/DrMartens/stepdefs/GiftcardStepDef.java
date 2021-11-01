@@ -8,13 +8,23 @@ import io.cucumber.java.en.When;
 public class GiftcardStepDef {
     GiftcardPage giftcardPage = new GiftcardPage();
 
-    @Given("User click on giftcard")
-    public void user_click_on_giftcard() {
-        giftcardPage.setGiftcard();
+    @Given("User search for GiftCard")
+    public void user_search_for_gift_card() {
+
+        giftcardPage.setSearch();
+
+    }
+
+    @Given("User click on giftCard")
+    public void user_click_on_giftCard() {
+
+        giftcardPage.clickGiftCard();
+
     }
 
     @Given("User click Buy now")
     public void user_click_buy_now() {
+
         giftcardPage.setBuynow();
     }
 
@@ -23,8 +33,8 @@ public class GiftcardStepDef {
         giftcardPage.setGiftcardcolour();
     }
 
-    @When("User select giftcard amount")
-    public void user_select_giftcard_amount() {
+    @When("User select giftCard amount")
+    public void user_select_giftCard_amount() {
         giftcardPage.setAmount();
     }
 
@@ -38,8 +48,8 @@ public class GiftcardStepDef {
         giftcardPage.setAddtocart();
     }
 
-    @Then("User can see selected Gift card succesfully added to shopping cart")
-    public void user_can_see_selected_gift_card_succesfully_added_to_shopping_cart() {
+    @Then("User can see selected Gift card successfully added to shopping cart")
+    public void user_can_see_selected_gift_card_successfully_added_to_shopping_cart() {
         giftcardPage.setHeadlinetext();
 
     }

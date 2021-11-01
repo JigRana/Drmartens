@@ -16,12 +16,14 @@ public class HomePage extends DriverManger {
     {
         ScrollByJavaScriptExecutor(0,300);
         continueshopping.click();
+        sleep(2000);
     }
 
     public void setCookieAccept()
     {
 
         CookieAccept.click();
+        sleep(2000);
     }
 
     public void setSignIn()
