@@ -8,6 +8,10 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 public class GiftcardPage extends DriverManger {
+    @FindBy(css = "#js-site-search-input")
+    WebElement search;
+    @FindBy(linkText = "gift card")
+    WebElement giftCardText;
     @FindBy(css = "#country-modal-submit")
     WebElement continueshopping;
     @FindBy(css = "#onetrust-accept-btn-handler")
@@ -16,10 +20,10 @@ public class GiftcardPage extends DriverManger {
     WebElement giftcard;
     @FindBy (xpath = "//div[@class='col-xs-12 col-md-6 col-md-offset-3']/div/div[1]")
     WebElement buynow;
-    @FindBy (css = "a[name='/p/GC002GRY']")
+    @FindBy (xpath = "(//a[@class='colorVariant js-pdp-variant giftCardVariant'])[2]")
     WebElement giftcardcolour;
-    //@FindBy (xpath = "//div[@class='variant-block _active']/ul/li[1]" )
-    //WebElement amount;
+    @FindBy (xpath = "//div[@class='variant-block _active']/ul/li[1]" )
+    WebElement amount;
     @FindBy (css = ".price-selection")
     List<WebElement>amounts;
     @FindBy (id = "recipient_name")
@@ -36,13 +40,29 @@ public class GiftcardPage extends DriverManger {
     WebElement addtocart;
     @FindBy (css = ".headline-text")
     WebElement headlinetext;
+    @FindBy (css = "#sendLaterDate")
+    WebElement dateIcon;
+    @FindBy (css = "#sendLaterDate")
+    List<WebElement> dates;
+
+
 
     public void setGiftcard(){
         CookieAccept.click();
         continueshopping.click();
-        giftcard.click();
+
+       // giftcard.click();
+    }
+    public void setSearch(){
+
+        search.sendKeys("gift");
+    }
+    public void clickGiftCard(){
+        giftCardText.click();
+        sleep(4000);
     }
     public void setBuynow(){
+        ScrollByJavaScriptExecutor(0,400);
         buynow.click();
         sleep(2000);
     }
@@ -74,7 +94,7 @@ public class GiftcardPage extends DriverManger {
     {
         sleep(1000);
         addtocart.click();
-        sleep(4000);
+        sleep(5000);
     }
     public void setHeadlinetext(){
         String cartactualheadline= headlinetext.getText();
