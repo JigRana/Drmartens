@@ -21,7 +21,7 @@ Feature: Search Functionality
     Then User able to see respective product as per "<selectedFilter>"
 
     Examples:
-      |product|filter  |subFilter | selectedFilter |
-      |SHOES | STYLE | BROGUES | BROGUES |
-      |BOOTS  | GENDER | MENS     | MENS           |
-      |SHOES  | PRODUCT TYPE | ACCESSORIES | ACCESSORIES |
+      |product  |filter        |subFilter   | selectedFilter |
+      |SHOES    | STYLE        | BROGUES    | BROGUES        |
+      |BOOTS    | GENDER       | MENS       | MENS           |
+      |SHOES    | PRODUCT TYPE | ACCESSORIES| ACCESSORIES    |

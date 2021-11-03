@@ -1,7 +1,6 @@
 package com.DrMartens.pages;
 
 import com.DrMartens.drivermanger.DriverManger;
-import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -36,46 +35,53 @@ public class GiftcardPage extends DriverManger {
     WebElement sendername;
     @FindBy (id= "giftcard_message")
     WebElement giftcardmessage;
+    @FindBy(css = ".sendLater")
+    WebElement sendLater;
+    @FindBy(css = ".calendar-icon")
+    WebElement calenderIcon;
+    @FindBy(css = ".day")
+    List<WebElement> calenderDates;
     @FindBy (id = "addToCartButton")
     WebElement addtocart;
     @FindBy (css = ".headline-text")
     WebElement headlinetext;
-    @FindBy (css = "#sendLaterDate")
-    WebElement dateIcon;
-    @FindBy (css = "#sendLaterDate")
-    List<WebElement> dates;
+    @FindBy(css = ".col-xs-5.basket-product-right")
+    WebElement giftCardValueInBasket;
 
 
 
-    public void setGiftcard(){
+
+  /*  public void setGiftcard(){
         CookieAccept.click();
         continueshopping.click();
 
        // giftcard.click();
-    }
+    }*/
     public void setSearch(){
 
         search.sendKeys("gift");
     }
     public void clickGiftCard(){
         giftCardText.click();
-        sleep(4000);
+        //sleep(4000);
     }
     public void setBuynow(){
         ScrollByJavaScriptExecutor(0,400);
-        buynow.click();
-        sleep(2000);
+        waitUntilElementVisible(buynow);
+        isBtnClickable(buynow).click();
+        //sleep(2000);
     }
     public void setGiftcardcolour(){
-        giftcardcolour.click();
+
+        waitUntilElementVisible(giftcardcolour).click();
     }
-    public void setAmount(){
+    public void setAmount(String amount){
         ScrollByJavaScriptExecutor(0,200);
 
         for (int i = 0; i < amounts.size(); i++) {
             String Calenderdatetext = amounts.get(i).getText();
             System.out.println(Calenderdatetext + "$$$$$$$$$$");
-            if (Calenderdatetext.equalsIgnoreCase("£125.00")) {
+            if (Calenderdatetext.equalsIgnoreCase(amount)) {
                 amounts.get(i).click();
                 break;
             }
@@ -90,15 +96,34 @@ public class GiftcardPage extends DriverManger {
         giftcardmessage.sendKeys("Happy birthday");
 
     }
+    public void selectLaterDate(String date){
+        isBtnClickable(sendLater).click();
+        isBtnClickable(calenderIcon).click();
+        for (WebElement calenderDate : calenderDates){
+            String calenderDateText = calenderDate.getText();
+            if(calenderDateText.equalsIgnoreCase(date)){
+                calenderDate.click();
+                break;
+            }
+        }
+    }
     public void setAddtocart()
     {
-        sleep(1000);
-        addtocart.click();
-        sleep(5000);
+        //sleep(1000);
+        waitUntilElementVisible(addtocart);
+        isBtnClickable(addtocart).click();
+        //sleep(5000);
     }
-    public void setHeadlinetext(){
-        String cartactualheadline= headlinetext.getText();
-        System.out.println(cartactualheadline + "££££££££££££");
-        Assert.assertEquals("Added to Your Shopping Cart",cartactualheadline);
+    public String setHeadlinetext(){
+        String cartActualHeadline= waitUntilElementVisible(headlinetext).getText();
+        System.out.println(cartActualHeadline + "££££££££££££");
+        return cartActualHeadline;
+      //  Assert.assertEquals("Added to Your Shopping Cart",cartActualHeadline);
+
+    }
+    public String setGiftCardValueInBasket(){
+        String cartActualAmount = waitUntilElementVisible(giftCardValueInBasket).getText();
+        System.out.println(cartActualAmount + "xxxxxxxxx");
+        return cartActualAmount;
     }
 }

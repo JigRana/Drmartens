@@ -13,6 +13,6 @@ import org.junit.runner.RunWith;
         "progress:target/cucumber-progress.txt"
 },
 
-        tags = "@regression")
+        tags = "@jr")
 public class Cucumber_Runner {
 }
