@@ -15,20 +15,20 @@ public class HomePage extends DriverManger {
     public void setCountryselect()
     {
         ScrollByJavaScriptExecutor(0,300);
-        continueshopping.click();
+        isBtnClickable(continueshopping).click();
         sleep(2000);
     }
 
     public void setCookieAccept()
     {
 
-        CookieAccept.click();
+        isBtnClickable(CookieAccept).click();
         sleep(2000);
     }
 
     public void setSignIn()
     {
-        SignIn.click();
+        isBtnClickable(SignIn).click();
     }
     public String getCurrentUrl()
     {
